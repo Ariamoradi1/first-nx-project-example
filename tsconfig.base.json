@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@org/component": ["libs/component/src/index.ts"],
+      "@org/component-a": ["libs/component-a/src/index.ts"],
+      "@org/component-b": ["libs/component-b/src/index.ts"],
+      "@org/components": ["libs/components/src/index.ts"],
+      "@org/num": ["libs/num/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

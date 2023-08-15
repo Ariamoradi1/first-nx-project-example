@@ -3,15 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
-import { NxWelcomeComponent } from './nx-welcome.component';
-
+import { NumModule } from '@org/num';
+import { HttpClientModule } from '@angular/common/http';
+import { MatTableModule } from '@angular/material/table'
+// eslint-disable-next-line @nx/enforce-module-boundaries
+import {ComponentsModule} from '../../../../libs/shared/components/src'
+import { ComponentAModule } from '@org/component-a';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
+  declarations: [AppComponent],
   imports: [
+    HttpClientModule,
     BrowserModule,
+    MatButtonModule,
+    MatTableModule,
+    MatToolbarModule,
+    ComponentAModule,
+    ComponentsModule,
+    MatTableModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
   ],
-  providers: [],
+  providers: [NumModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NumModule } from '@org/num';
 
 @Component({
   selector: 'org-root',

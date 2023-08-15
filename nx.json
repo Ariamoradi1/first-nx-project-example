@@ -45,7 +45,7 @@
   },
   "generators": {
     "@nx/angular:application": {
-      "style": "scss",
+      "style": ["scss","node_modules/@angular/material/prebuilt-themes/indigo-pink.css"],
       "linter": "eslint",
       "unitTestRunner": "jest",
       "e2eTestRunner": "cypress"
@@ -55,7 +55,7 @@
       "unitTestRunner": "jest"
     },
     "@nx/angular:component": {
-      "style": "scss"
+      "style":[ "scss", "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"]
     }
   }
 }
