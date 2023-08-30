@@ -1,6 +1,7 @@
+$margin : 100px;
 img{
-  width: 100px;
-  height: 100px;
+  width: $margin;
+  height: $margin;
 }
 
 .container{
@@ -28,3 +29,4 @@ img{
 p,h5{
   font-size: 12px;
 }
+
