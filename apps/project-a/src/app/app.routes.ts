@@ -6,4 +6,9 @@ export const appRoutes: Route[] = [
     loadChildren: () =>
       import('@org/component-a').then((module) => module.ComponentAModule),
   },
+  {
+    path: 'add',
+    loadChildren: () =>
+      import('@org/add-user').then((module) => module.AddUserModule),
+  }
 ];

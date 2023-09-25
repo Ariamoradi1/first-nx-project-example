@@ -12,6 +12,7 @@ import { ComponentAModule } from '@org/component-a';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { AddUserModule } from '@org/add-user';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -20,8 +21,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatButtonModule,
     MatTableModule,
     MatToolbarModule,
+    AddUserModule,
     ComponentAModule,
-    ComponentsModule,
     MatTableModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
   ],

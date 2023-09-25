@@ -9,12 +9,13 @@ import { StoreModule } from '@ngrx/store';
 import { getDataReducer } from './store/store.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { getDataEffect } from './store/store.effect';
-
+import {ComponentsModule} from "../../../shared/components/src/lib/components.module"
 @NgModule({
   imports: [
     CommonModule,
     HttpClientModule,
     MatCardModule,
+    ComponentsModule,
     StoreModule.forRoot({data:getDataReducer}),
     EffectsModule.forRoot([getDataEffect]),
     RouterModule.forChild(componentBRoutes)

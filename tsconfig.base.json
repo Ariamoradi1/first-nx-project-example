@@ -15,11 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@org/add-user": ["libs/add-user/src/index.ts"],
       "@org/component": ["libs/component/src/index.ts"],
       "@org/component-a": ["libs/component-a/src/index.ts"],
       "@org/component-b": ["libs/component-b/src/index.ts"],
       "@org/components": ["libs/components/src/index.ts"],
-      "@org/num": ["libs/num/src/index.ts"]
+      "@org/num": ["libs/num/src/index.ts"],
+      "@org/users-table": ["libs/users-table/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

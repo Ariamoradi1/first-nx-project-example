@@ -7,3 +7,18 @@ ul{
 .mat{
   width: 100%;
 }
+
+div{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button{
+  padding: 8px;
+  border: none;
+  color: white;
+  background-color: blue;
+  border-radius: 8px;
+  cursor: pointer;
+}

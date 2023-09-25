@@ -7,11 +7,12 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { Routes } from '@angular/router';
+import { ComponentsModule } from '../../../shared/components/src/lib/components.module'
 const routes: Routes = [
   { path: '', component: HeadComponent },
 ];
 @NgModule({
-  imports: [CommonModule,MatButtonModule,MatIconModule,MatToolbarModule, RouterModule.forChild(routes)],
+  imports: [CommonModule,MatButtonModule,MatIconModule,MatToolbarModule,ComponentsModule, RouterModule.forChild(routes)],
   declarations: [HeadComponent],
   exports:[HeadComponent]
 })
